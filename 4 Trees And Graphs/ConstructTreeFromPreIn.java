@@ -51,10 +51,11 @@ public class ConstructTreeFromPreIn {
         int sInLeft = sIn;
         int ePreRight = ePre;
         int eInRight = eIn;
+        
         int sInRight = indexOfRoot + 1;
         int eInLeft = indexOfRoot - 1;
-        int ePreLeft = sPreLeft + (eInLeft - sInLeft + 1);
-        int sPreRight = ePreLeft + 1;
+        int ePreLeft = sPre + indexOfRoot - sIn;
+        int sPreRight = ePre - eIn + indexOfRoot + 1; // pe - ie + pos + 1
 
 
         BinaryTreeNode<Integer>  left = helper(pre, in, sPreLeft, ePreLeft,sInLeft, eInLeft);
