@@ -1,15 +1,15 @@
-class BinaryTreeNode{
-    int val; 
-    BinaryTreeNode left;
-    BinaryTreeNode right;
 
-      BinaryTreeNode(int val){
-      this.val = val;
-      this.left = null;
-      this.right = null;
-      }
-  
+ class BinaryTreeNode<T>{
+    T val;
+    BinaryTreeNode<T> left;
+    BinaryTreeNode<T> right;
+    BinaryTreeNode(T val){
+        this.val = val;
+        this.left = null;
+        this.right = null;
+    }
 }
+
 
 public class TreeInputLevelWise{
 
