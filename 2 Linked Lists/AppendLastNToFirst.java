@@ -1,7 +1,5 @@
 package com.company.LinkedLists;
 
-import jdk.dynalink.linker.LinkerServices;
-
 public class AppendLastNToFirst {
 
     public static LinkedListNode createNode(int val) {
